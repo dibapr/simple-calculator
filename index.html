@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Kalkulator Sederhana / Simple Calculator</h1>
+    <div class="container">
+        <div class="text">
+            <p>*Karena ini merupakan kalkulator sederhana, maka gunakan CE untuk membuat perhitungan baru</p>
+            <p>*Due to this simple calculator, then use CE to make a new calculation</p>
+        </div>
+        <div class="flex-container-column">
+            <div class="display">
+                <h1 id="displayNumber">0</h1>
+            </div>
+            <div class="flex-container-row">
+                <div class="button hover">7</div>
+                <div class="button hover">8</div>
+                <div class="button hover">9</div>
+                <div class="button negative">+/-</div>
+            </div>
+            <div class="flex-container-row">
+                <div class="button hover">4</div>
+                <div class="button hover">5</div>
+                <div class="button hover">6</div>
+                <div class="button operator">-</div>
+            </div>
+            <div class="flex-container-row">
+                <div class="button hover">1</div>
+                <div class="button hover">2</div>
+                <div class="button hover">3</div>
+                <div class="button operator">+</div>
+            </div>
+            <div class="flex-container-row">
+                <div class="button clear hover">CE</div>
+                <div class="button hover">0</div>
+                <div class="button equals double">=</div>
+            </div>
+        </div>
+        <div class="history card">
+            <h1>Riwayat Perhitungan / Calculation History</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>First Number</th>
+                        <th>Operator</th>
+                        <th>Second Number</th>
+                        <th>History</th>
+                    </tr>
+                </thead>
+                <tbody id="historyList">
+
+                </tbody>
+            </table>
+            <button id="removeHistory">Clear</button>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+<script src="js/storage.js"></script>
+</html>

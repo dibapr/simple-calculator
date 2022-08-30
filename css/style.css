@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+}
+
+
+.flex-container-column {
+   display: flex;
+   flex-direction: column;
+ 
+   max-width: 800px;
+   margin: 0 auto;
+   text-align: right;
+}
+
+.flex-container-row {
+   display: flex;
+}
+
+.button {
+   flex-basis: 25%;
+  
+   /* properti pendukung */
+   font-size: 1.5em;
+   text-align: center;
+   padding: 40px;
+   border: 1px solid black;
+   background: -webkit-linear-gradient(top, #afcbe2, rgb(144, 183, 241));
+   cursor: pointer;
+}
+
+.double {
+   flex-basis: 50%;
+}
+
+.display {
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #2e4055;
+  border: 1px solid black;
+  font-size: 2em;
+}
+
+.operator,
+.negative,
+.equals {
+  background: rgb(192, 230, 255);
+}
+
+.operator:hover,
+.negative:hover,
+.equals:hover {
+  background: rgb(146, 208, 250);
+}
+
+.hover:hover {
+  background: -webkit-linear-gradient(top, #97c0e2, rgb(104, 158, 238));
+}
+
+.text {
+   width: 50%;
+   margin: auto;  
+}
+
+.history {
+   margin: 2em auto;
+   width: 50%;
+}
+
+.card {
+   padding: 4em 2em;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   border-radius: 20px;
+}
+
+.table {
+   margin: auto;
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+
+th {
+   background-color: orange;
+   color: white;
+   padding: 0.5em 1em;
+}
+
+tr:nth-child(even) {
+   background-color: #d2d2d2;
+}
+
+td {
+   padding: 0.5em 1em;
+}
+
+#removeHistory {
+   float: right;
+   background: orange;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 10px;
+   margin-top: 1em;
+   border-radius: 5px;
+}
+
+#removeHistory:hover {
+   background: brown;
+   color: white;
+}
+
+@media screen and (max-width: 513px) {
+   .button {
+       padding: 10px;
+   }
+}
